@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" data-app="attribution-lab" data-layout="tool">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f3fa">
+  <meta name="description" content="Compare first-touch, last-touch and linear attribution with an editable demo dataset or your own campaign CSV.">
+  <meta property="og:title" content="Attribution Lab — DIGITAL ANALYTICS · MODEL COMPARISON">
+  <meta property="og:description" content="Compare first-touch, last-touch and linear attribution with an editable demo dataset or your own campaign CSV.">
+  <meta property="og:image" content="preview.svg">
+  <title>Attribution Lab — DIGITAL ANALYTICS · MODEL COMPARISON</title>
+  <link rel="icon" href="preview.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body style="--paper:#f2f3fa;--ink:#25263a;--muted:#77788d;--accent:#a6a6ff;--accent2:#78dcc8">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><span>A FREE, LOCAL-FIRST MARKETING WORKBENCH</span><span>SAMPLE CONTENT · NO TRACKING <b>✳</b></span></div>
+  <header class="site-nav"><a class="brand" href="#top" aria-label="Attribution Lab home"><span class="brand-mark">◈</span>Attribution Lab<small>TOOLKIT</small></a><nav id="main-navigation" aria-label="Main navigation"><a href="#workspace">Workspace</a><a href="#notes">About</a><a class="nav-cta" href="#workspace">Open the tool ↗</a></nav><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button></header>
+  <main id="main">
+    <section class="tool-hero" id="top"><div><span class="eyebrow"><i class="eyebrow-dot"></i>DIGITAL ANALYTICS · MODEL COMPARISON</span><h1>See how credit<br>changes the story.</h1><p>Compare first-touch, last-touch and linear attribution with an editable demo dataset or your own campaign CSV.</p><div class="tool-trust"><span class="lock-mark">⌑</span><span>Runs in your browser <b>·</b> No account <b>·</b> Your data stays local</span></div></div><div class="tool-hero-side"><div class="metric-orb"><b>3 models</b><span>compare before you commit to a story</span></div><span class="orb-caption">BUILT FOR CLEARER DECISIONS</span></div></section>
+    <section id="workspace" class="tool-workspace"><section class="panel import-panel attribution-import"><div><span class="eyebrow">A TRANSPARENT MODEL COMPARISON</span><h2>Change the model. See the credit move.</h2><p>Choose a model and compare how this demo campaign data distributes conversion credit.</p></div><div class="field-row"><label for="attr-model">Attribution model<select id="attr-model"><option value="last">Last touch</option><option value="first">First touch</option><option value="linear">Linear</option></select></label><button id="load-attr-sample" class="btn btn--accent">Reset sample ↻</button><label class="file-choose" for="attr-file">Import CSV<input id="attr-file" type="file" accept=".csv,text/csv"></label></div><span id="attr-status" class="micro-note" aria-live="polite">Demo data is illustrative, not business performance.</span></section><section class="kpi-grid" id="attr-kpis"></section><section class="panel"><div class="panel-head"><div><span class="eyebrow">CREDIT BY CHANNEL</span><h2 id="attr-model-title">Last-touch view</h2></div><span class="soft-badge">DEMO MODEL</span></div><div id="attr-results" class="attribution-bars" aria-live="polite"></div><div class="table-scroll"><table class="data-table"><thead><tr><th>Channel</th><th>Touches</th><th>Conversions</th><th>Credit share</th><th>Revenue</th></tr></thead><tbody id="attr-table"></tbody></table></div><p class="micro-note">This simplified model assigns equal credit to each observed touch according to the selected rule. It is for exploration, not causal analysis.</p></section></section>
+    <section class="notes-section notes-section--tool" id="notes"><div><span class="eyebrow">SCOPE & METHOD</span><h2>A helpful lens, with its limits in view.</h2></div><div class="notes-copy"><p>This small tool makes its inputs and assumptions visible. It runs locally in your browser and never sends the data you enter to an external service.</p><p>Use results as a practical starting point, then check platform documentation, real search results and first-hand research before making business decisions.</p><a href="README.md" class="text-button">Read the project notes ↗</a></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">✳</span>Attribution Lab</a><p>A small, transparent tool for better marketing work.</p><div class="footer-links"><a href="#top">Back to top ↑</a><a href="README.md">Documentation</a><span>Built by Ronak Soltani · 2026</span></div></footer>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
